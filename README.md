@@ -62,7 +62,7 @@
 
 ## Instalación (Sideload — Modo desarrollador)
 
-WDex AI **no está en la Chrome Web Store**. Se instala en modo desarrollador desde los archivos del repositorio. Así evitas restricciones de la tienda (derechos, políticas de “trampas”) y tienes control total sobre la extensión.
+WDex AI **no está en la Chrome Web Store**. Se instala en modo desarrollador desde los archivos del repositorio. Así evitas restricciones de la tienda y tienes control total sobre la extensión.
 
 ### Requisitos
 
