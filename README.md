@@ -34,7 +34,6 @@
 - **Modo solo datos (sin IA):** Muestra tu Pokémon activo, equipo, movimientos y la misma información del rival (sprite, tipos, movimientos vistos). Incluye **debilidades tipo** del rival (tipos a los que es débil).
 - **Modo con IA (OpenRouter o Gemini):** Sugerencias de movimiento en español (“Atacar / Usar / Cambiar a” + “Por qué”) usando el estado de la batalla y los datos del rival.
 - **Actualizar:** Vuelve a pedir sugerencia sin recargar la página (útil al cambiar de modelo).
-- **Diseño tipo “gamer”:** Overlay arrastrable, bordes neón y badges de tipos con colores.
 - **Imágenes y tipos:** Sprites y tipos desde [PokeAPI](https://pokeapi.co/).
 
 ---
