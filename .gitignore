@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Env / secrets (no subir claves)
+.env
+.env.local
+*.pem
+
+# Logs
+*.log
+npm-debug.log*

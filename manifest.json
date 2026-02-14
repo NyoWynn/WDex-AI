@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "WDex AI",
+  "version": "1.0.0",
+  "description": "Analiza batallas de Pokémon Showdown con IA y muestra datos de tu equipo y el rival.",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": [
+    "https://play.pokemonshowdown.com/*",
+    "https://*.pokemonshowdown.com/*",
+    "https://generativelanguage.googleapis.com/*",
+    "https://openrouter.ai/*"
+  ],
+  "background": {
+    "service_worker": "dist/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://play.pokemonshowdown.com/*", "https://*.pokemonshowdown.com/*"],
+      "js": ["dist/injected-script.js"],
+      "world": "MAIN",
+      "run_at": "document_start",
+      "all_frames": false
+    },
+    {
+      "matches": ["https://play.pokemonshowdown.com/*", "https://*.pokemonshowdown.com/*"],
+      "js": ["dist/content-script.js"],
+      "css": ["dist/assets/content.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dist/assets/*", "dist/*.js", "logoWDEX.png", "wynnDevLogo.png"],
+      "matches": ["https://play.pokemonshowdown.com/*", "https://*.pokemonshowdown.com/*"]
+    }
+  ]
+}
